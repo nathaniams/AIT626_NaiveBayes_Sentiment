@@ -6,7 +6,7 @@ This project builds a Naïve Bayes sentiment classifier from scratch, using only
 ## Team Members and Responsibilities
 **Group 3**
 - Nathania: Data preprocessing, vocabulary construction ($V$), and feature extraction, Bag of Words frequency and binary vector representation [cite: 1].
-- Farzad: Naïve Bayes algorithm implementation, prior calculation, likelihood estimation, and test set predition.
+- Farzad: Naïve Bayes algorithm implementation, prior calculation, likelihood estimation, and test set precdition.
 - Yuze: Evaluation pipeline, confusion matrix generation, experimental variations (stemming versus no-stemming, bonus tasks), documentation, and code integration.
 
 ---
@@ -24,6 +24,19 @@ AIT626_NaiveBayes_Sentiment/
 ├── README.md                # Project documentation
 └── main.py                  # End-to-end integration script
 ```
+## Dataset Setup
+1. Download the tweet dataset zip file provided for Assignment 2 in Canvas.
+2. Extract the archive into the root directory so that the folder structure is as follows:
+    ```text
+   AIT626_NaiveBayes_Sentiment/
+   ├── data/
+   │   ├── train/
+   │   │   ├── positive/
+   │   │   └── negative/
+   │   └── test/
+   │       ├── positive/
+   │       └── negative/
+   ```
 
 ## References
 [1] Liao, D., PhD. (2026). <i>NLP Programming Assignment: Sentiment Classification with Naïve Bayes.</i> AIT 626 Natural Language Processing. George Mason University.<br>
