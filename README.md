@@ -12,7 +12,7 @@ This project builds a Naïve Bayes sentiment classifier from scratch, using only
 ---
 
 ## Project Structure
-'''text
+```text
 AIT626_NaiveBayes_Sentiment/
 │
 ├── data/                    # Training and test dataset splits (pos/neg directories)
