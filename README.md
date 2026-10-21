@@ -1,7 +1,7 @@
 # AIT626: Sentiment Classification with Naïve Bayes (Assignment 2)
 
 ## Project Overview
-This project builds a Naïve Bayes sentiment classifier from scratch, using only foundational libraries like NumPy and NLTK for tokenization and stemming, without relying on pre-build machine learning classifiers like scikit-learn [cite: 1]. The model classifies airline review tweets into two sentiment classes: **Positive** and **Negative** [cite: 1].
+This project builds a Naïve Bayes sentiment classifier from scratch, using only foundational libraries like NumPy and NLTK for tokenization and stemming, without relying on pre-build machine learning classifiers like scikit-learn [1]. The model classifies airline review tweets into two sentiment classes: **Positive** and **Negative** [1].
 
 ## Team Members and Responsibilities
 **Group 3**
@@ -23,3 +23,8 @@ AIT626_NaiveBayes_Sentiment/
 ├── outputs/                 # Saved results and log files (.txt / .log)
 ├── README.md                # Project documentation
 └── main.py                  # End-to-end integration script
+```
+
+## References
+[1] Liao, D., PhD. (2026). <i>NLP Programming Assignment: Sentiment Classification with Naïve Bayes.</i> AIT 626 Natural Language Processing. George Mason University.<br>
+[2] Kashetti, R., & Liao D., PhD. (2026). <i>Sentiment Classification with Naïve Bayes: Tips and Hints</i> AIT 626 Natural Language Processing. George Mason University.
