@@ -1,1 +1,14 @@
 data/
+
+# macOS
+.DS_Store
+
+# Python virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Local datasets
+data/
