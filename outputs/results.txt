@@ -1,0 +1,104 @@
+AIT 626 Naive Bayes Sentiment Classification
+Run timestamp: 2026-10-26 11:38:48
+Labels: 0=negative, 1=positive
+All vocabularies and optional IDF derived from training set only.
+Multinomial NB with Laplace alpha=1; binary means binary-weighted Multinomial NB.
+
+no_stem: training documents=4181, test documents=4182, |V|=8163
+Experiment: no_stem_count
+Accuracy: 0.8905 (3724/4182)
+Confusion matrix (ROWS=true, COLUMNS=predicted):
+                   Pred Negative    Pred Positive
+  True Negative          2916               84
+  True Positive           374              808
+Negative: precision=0.8863 recall=0.9720 F1=0.9272
+Positive: precision=0.9058 recall=0.6836 F1=0.7792
+Model:
+Naive Bayes (alpha = 1.0), |V| = 8163
+  class 0: 3000 docs, prior = 3000/4181 = 0.7175, total feature weight = 70965
+  class 1: 1181 docs, prior = 1181/4181 = 0.2825, total feature weight = 21390
+----------------------------------------------------------------
+
+Experiment: no_stem_binary
+Accuracy: 0.8859 (3705/4182)
+Confusion matrix (ROWS=true, COLUMNS=predicted):
+                   Pred Negative    Pred Positive
+  True Negative          2925               75
+  True Positive           402              780
+Negative: precision=0.8792 recall=0.9750 F1=0.9246
+Positive: precision=0.9123 recall=0.6599 F1=0.7658
+Model:
+Naive Bayes (alpha = 1.0), |V| = 8163
+  class 0: 3000 docs, prior = 3000/4181 = 0.7175, total feature weight = 64538
+  class 1: 1181 docs, prior = 1181/4181 = 0.2825, total feature weight = 19448
+----------------------------------------------------------------
+
+Experiment: no_stem_tfidf
+Accuracy: 0.8828 (3692/4182)
+Confusion matrix (ROWS=true, COLUMNS=predicted):
+                   Pred Negative    Pred Positive
+  True Negative          2764              236
+  True Positive           254              928
+Negative: precision=0.9158 recall=0.9213 F1=0.9186
+Positive: precision=0.7973 recall=0.7851 F1=0.7911
+Model:
+Naive Bayes (alpha = 1.0), |V| = 8163
+  class 0: 3000 docs, prior = 3000/4181 = 0.7175, total feature weight = 301557
+  class 1: 1181 docs, prior = 1181/4181 = 0.2825, total feature weight = 89991
+----------------------------------------------------------------
+
+stem: training documents=4181, test documents=4182, |V|=6482
+Experiment: stem_count
+Accuracy: 0.8960 (3747/4182)
+Confusion matrix (ROWS=true, COLUMNS=predicted):
+                   Pred Negative    Pred Positive
+  True Negative          2910               90
+  True Positive           345              837
+Negative: precision=0.8940 recall=0.9700 F1=0.9305
+Positive: precision=0.9029 recall=0.7081 F1=0.7937
+Model:
+Naive Bayes (alpha = 1.0), |V| = 6482
+  class 0: 3000 docs, prior = 3000/4181 = 0.7175, total feature weight = 70965
+  class 1: 1181 docs, prior = 1181/4181 = 0.2825, total feature weight = 21390
+----------------------------------------------------------------
+
+Experiment: stem_binary
+Accuracy: 0.8950 (3743/4182)
+Confusion matrix (ROWS=true, COLUMNS=predicted):
+                   Pred Negative    Pred Positive
+  True Negative          2924               76
+  True Positive           363              819
+Negative: precision=0.8896 recall=0.9747 F1=0.9302
+Positive: precision=0.9151 recall=0.6929 F1=0.7886
+Model:
+Naive Bayes (alpha = 1.0), |V| = 6482
+  class 0: 3000 docs, prior = 3000/4181 = 0.7175, total feature weight = 64184
+  class 1: 1181 docs, prior = 1181/4181 = 0.2825, total feature weight = 19390
+----------------------------------------------------------------
+
+Experiment: stem_tfidf
+Accuracy: 0.8816 (3687/4182)
+Confusion matrix (ROWS=true, COLUMNS=predicted):
+                   Pred Negative    Pred Positive
+  True Negative          2755              245
+  True Positive           250              932
+Negative: precision=0.9168 recall=0.9183 F1=0.9176
+Positive: precision=0.7918 recall=0.7885 F1=0.7902
+Model:
+Naive Bayes (alpha = 1.0), |V| = 6482
+  class 0: 3000 docs, prior = 3000/4181 = 0.7175, total feature weight = 288440
+  class 1: 1181 docs, prior = 1181/4181 = 0.2825, total feature weight = 86056.4
+----------------------------------------------------------------
+
+SUMMARY
+Experiment                      Accuracy
+------------------------------------------
+no_stem_count                  0.8905
+no_stem_binary                 0.8859
+no_stem_tfidf                  0.8828
+stem_count                     0.8960
+stem_binary                    0.8950
+stem_tfidf                     0.8816
+
+Bonus: raw term frequency * smoothed training-set IDF;
+fractional TF-IDF weights in Multinomial NB are an exploratory extension.
