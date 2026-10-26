@@ -81,9 +81,9 @@ class NaiveBayesClassifier:
         return self.fit([self.tokens_to_vector(t, binary) for t in documents],
                         labels, vocab)
 
-    # ------------------------------------------------------------------ #
+    
     # Prediction
-    # ------------------------------------------------------------------ #
+    
     def word_log_likelihood(self, word, c):
         """log P(word | c) with smoothing; assumes word is in the vocabulary."""
         return self.log_likelihood[c].get(word, self.log_unseen[c])
